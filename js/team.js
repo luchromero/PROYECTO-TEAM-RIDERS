@@ -17,8 +17,8 @@ function createRiderHTML(rider) {
                     </div>
                     <div class="rider-info">
                         <h2 class="rider-info-name">${rider.name}</h2>
-                        <p class="rider-info-description">${rider.longDescription}</p>
-                        <a href="#" class="rider-button">Ver más</a>
+                        <p class="rider-info-description">${rider.shortDescription}</p>
+                        <a href="${rider.id}.html" class="rider-button">Ver más</a>
                     </div>
                 </div>
             </div>
