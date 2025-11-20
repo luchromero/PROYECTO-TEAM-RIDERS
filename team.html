@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="css/team.css">
 </head>
 <body>
+    <div class="grid-button-container">
+        <a href="#riders-section" class="ver-riders-button">Ver Riders</a>
+    </div>
     <div class="images-grid">
         <div class="grid-item azul"><img src="images/Grilla/azul.jpg" alt=""></div>
         <div class="grid-item rojo"><img src="images/Grilla/rojo.jpg" alt=""></div>
@@ -22,8 +25,10 @@
         <div class="grid-item gris"><img src="images/Grilla/gris.jpg" alt=""></div>
     </div>
 
-    <div class="riders-accordion" id="ridersAccordion">
-        <!-- Los riders se generarán dinámicamente con JavaScript -->
+    <div class="riders-accordion" id="riders-section">
+        <div id="ridersAccordion">
+            <!-- Los riders se generarán dinámicamente con JavaScript -->
+        </div>
     </div>
 
     <script src="js/riders-data.js"></script>

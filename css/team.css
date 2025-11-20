@@ -1,4 +1,8 @@
 /* Reset y estilos base */
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -14,8 +18,43 @@ body {
     padding: 0;
 }
 
+/* Botón Ver Riders */
+.grid-button-container {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.ver-riders-button {
+    padding: 15px 40px;
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #1a1a1a;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    pointer-events: all;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.ver-riders-button:hover {
+    background-color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
 /* Grid de imágenes */
 .images-grid {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(10, 1fr);
@@ -244,6 +283,15 @@ body {
 
 /* Responsive */
 @media (max-width: 968px) {
+    .grid-button-container {
+        bottom: 30px;
+    }
+
+    .ver-riders-button {
+        padding: 12px 30px;
+        font-size: 0.9rem;
+    }
+
     .images-grid {
         height: 70vh;
         min-height: 400px;
@@ -271,6 +319,16 @@ body {
 }
 
 @media (max-width: 600px) {
+    .grid-button-container {
+        bottom: 20px;
+    }
+
+    .ver-riders-button {
+        padding: 10px 25px;
+        font-size: 0.85rem;
+        letter-spacing: 1px;
+    }
+
     .images-grid {
         height: 50vh;
         min-height: 300px;
