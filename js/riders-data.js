@@ -1,6 +1,5 @@
 // Array de datos de los riders
-// NOTA: Reemplaza las rutas de las fotos con las rutas reales de las imágenes
-// Las imágenes deben estar en la carpeta images/ o en la ruta que especifiques
+
 
 const ridersData = [
     {

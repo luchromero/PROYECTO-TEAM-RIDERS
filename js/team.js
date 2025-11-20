@@ -3,8 +3,8 @@ function createRiderHTML(rider) {
     return `
         <div class="rider-item" data-rider-id="${rider.id}">
             <div class="rider-header">
-                <span class="rider-name">${rider.name}</span>
                 <span class="rider-toggle">+</span>
+                <span class="rider-name">${rider.name}</span>
             </div>
             <div class="rider-content">
                 <div class="rider-content-wrapper">
@@ -64,12 +64,7 @@ function initAccordion() {
         });
     });
 
-    // Opción: Abrir el primer rider por defecto
-    // Descomenta las siguientes líneas si quieres que el primer rider esté abierto al cargar:
-    // if (riderItems.length > 0) {
-    //     riderItems[0].classList.add('active');
-    //     riderItems[0].querySelector('.rider-toggle').textContent = '–';
-    // }
+ 
 }
 
 // Inicializar cuando el DOM esté listo

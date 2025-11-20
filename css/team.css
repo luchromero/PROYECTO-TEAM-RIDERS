@@ -18,6 +18,45 @@ body {
     padding: 0;
 }
 
+/* Contenedor principal de la sección Team */
+.team-section-container {
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* Header con título y subtítulo */
+.team-header {
+    padding: 20px 50px 20px 50px;
+    text-align: left;
+    background-color: #ffffff;
+}
+
+.team-title {
+    font-size: 3.75rem;
+    font-weight: 900;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.team-subtitle {
+    font-size: 1rem;
+    color: #333;
+    margin: 10px 0 0 0;
+    padding: 0;
+    line-height: 1.6;
+    max-width: 800px;
+    border-top: 1px solid #000;
+
+    padding-top: 10px;
+}
+
 /* Botón Ver Riders */
 .grid-button-container {
     position: absolute;
@@ -61,10 +100,13 @@ body {
     grid-column-gap: 2px;
     grid-row-gap: 2px;
     width: 100%;
-    height: 100vh;
-    min-height: 600px;
+    flex: 1;
+    min-height: 0;
     background-color: #ffffff;
     padding: 0;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+
 }
 
 .grid-item {
@@ -150,16 +192,24 @@ body {
 .rider-header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 20px;
     padding: 25px 30px;
     cursor: pointer;
     background-color: #fff;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
     user-select: none;
 }
 
 .rider-header:hover {
-    background-color: #f9f9f9;
+    background-color: #000;
+}
+
+.rider-header:hover .rider-name {
+    color: #fff;
+}
+
+.rider-header:hover .rider-toggle {
+    color: #fff;
 }
 
 .rider-name {
@@ -177,11 +227,16 @@ body {
     transition: transform 0.3s ease, color 0.3s ease;
     width: 30px;
     text-align: center;
+    flex-shrink: 0;
 }
 
 .rider-item.active .rider-toggle {
     transform: rotate(0deg);
     color: #1a1a1a;
+}
+
+.rider-item.active .rider-header:hover .rider-toggle {
+    color: #fff;
 }
 
 .rider-content {
@@ -283,6 +338,23 @@ body {
 
 /* Responsive */
 @media (max-width: 968px) {
+    .team-section-container {
+        height: 110vh;
+    }
+
+    .team-header {
+        padding: 30px 30px 20px 30px;
+    }
+
+    .team-title {
+        font-size: 5rem;
+    }
+
+    .team-subtitle {
+        font-size: 1rem;
+        margin-top: 15px;
+    }
+
     .grid-button-container {
         bottom: 30px;
     }
@@ -293,7 +365,6 @@ body {
     }
 
     .images-grid {
-        height: 70vh;
         min-height: 400px;
     }
 
@@ -319,6 +390,23 @@ body {
 }
 
 @media (max-width: 600px) {
+    .team-section-container {
+        height: 80vh;
+    }
+
+    .team-header {
+        padding: 20px 20px 15px 20px;
+    }
+
+    .team-title {
+        font-size: 3rem;
+    }
+
+    .team-subtitle {
+        font-size: 0.9rem;
+        margin-top: 10px;
+    }
+
     .grid-button-container {
         bottom: 20px;
     }
@@ -330,7 +418,6 @@ body {
     }
 
     .images-grid {
-        height: 50vh;
         min-height: 300px;
     }
 
