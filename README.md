@@ -6,7 +6,7 @@ Página de Team / Riders inspirada en Rip Curl con acordeón interactivo.
 
 ```
 PROYECTO TEAM RIDERS/
-├── team.html          # Página principal
+├── index.html         # Página principal
 ├── css/
 │   └── team.css       # Estilos de la página
 ├── js/
@@ -17,7 +17,7 @@ PROYECTO TEAM RIDERS/
 
 ## Cómo usar
 
-1. Abre `team.html` en tu navegador.
+1. Abre `index.html` en tu navegador.
 
 2. **Agregar fotos de los riders:**
    - Coloca las imágenes en la carpeta `images/`
