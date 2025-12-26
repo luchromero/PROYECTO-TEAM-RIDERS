@@ -126,47 +126,47 @@ body {
 }
 
 /* Colores y posiciones del grid */
-.azul { 
+.azul {
     grid-area: 1 / 1 / 6 / 6;
     background-color: #3498db;
 }
 
-.rojo { 
+.rojo {
     grid-area: 5 / 6 / 11 / 11;
     background-color: #e74c3c;
 }
 
-.verde { 
+.verde {
     grid-area: 1 / 6 / 5 / 9;
     background-color: #2ecc71;
 }
 
-.amarillo { 
+.amarillo {
     grid-area: 3 / 9 / 5 / 11;
     background-color: #f1c40f;
 }
 
-.naranja { 
+.naranja {
     grid-area: 1 / 9 / 3 / 11;
     background-color: #e67e22;
 }
 
-.morado { 
+.morado {
     grid-area: 6 / 4 / 8 / 6;
     background-color: #9b59b6;
 }
 
-.rosa { 
+.rosa {
     grid-area: 6 / 1 / 8 / 4;
     background-color: #e91e63;
 }
 
-.cyan { 
+.cyan {
     grid-area: 8 / 1 / 11 / 3;
     background-color: #00bcd4;
 }
 
-.gris { 
+.gris {
     grid-area: 8 / 3 / 11 / 6;
     background-color: #607d8b;
 }
@@ -247,12 +247,12 @@ body {
 }
 
 .rider-item.active .rider-content {
-    max-height: 800px;
+    max-height: 1500px;
 }
 
 .rider-content-wrapper {
     display: flex;
-    min-height: 500px;
+    min-height: auto;
 }
 
 .rider-photo-container {
@@ -373,8 +373,12 @@ body {
         min-height: auto;
     }
 
+    .rider-item.active .rider-content {
+        max-height: 2000px;
+    }
+
     .rider-photo-container {
-        flex: 0 0 100%;
+        flex: 0 0 auto;
         width: 100%;
         height: auto;
         aspect-ratio: 1 / 1;
@@ -443,4 +447,3 @@ body {
         margin-bottom: 30px;
     }
 }
-
