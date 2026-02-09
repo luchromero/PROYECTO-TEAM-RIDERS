@@ -1,65 +1,37 @@
-# Team Riders - Página de Equipo
+# PROYECTO TEAM RIDERS
 
-Página de Team / Riders inspirada en Rip Curl con acordeón interactivo.
+Este proyecto consiste en un sitio web dedicado a presentar el equipo de riders de la marca, incluyendo atletas de surf y skate. La estructura del sitio se compone de una pagina principal con una grilla de imagenes y un acordeon interactivo con la informacion resumida de cada atleta, ademas de paginas individuales para cada uno de ellos con detalles mas especificos, logros y galerias de fotos.
 
-## Estructura del Proyecto
+## Contenido del Proyecto
 
-```
-PROYECTO TEAM RIDERS/
-├── index.html         # Página principal
-├── css/
-│   └── team.css       # Estilos de la página
-├── js/
-│   ├── riders-data.js # Datos de los riders (array de objetos)
-│   └── team.js        # Lógica del acordeón
-└── images/            # Carpeta para las fotos de los riders
-```
+### Pagina Principal
+- **index.html**: Archivo principal que contiene la estructura de la pagina de inicio, incluyendo el encabezado, la grilla de imagenes inicial y la seccion interactiva de los riders.
 
-## Cómo usar
+### Paginas de Riders
+Archivos HTML individuales para cada miembro del equipo, que contienen su biografia, ficha tecnica, titulos obtenidos y una galeria de imagenes personal:
+- **delfi-morosini.html**
+- **ines-beisso.html**
+- **lucas-raineri.html**
+- **luisma-iturria.html**
+- **meghan-mccubbin.html**
+- **nicolas-laprida.html**
+- **pedro-canal.html**
+- **roberto-camblor.html**
+- **santiago-medeiro.html**
 
-1. Abre `index.html` en tu navegador.
+### Estilos (CSS)
+Carpeta `css/` que contiene las hojas de estilo:
+- **team.css**: Estilos generales para la pagina principal, la grilla y el acordeon.
+- **team-member.css**: Estilos especificos para las fichas individuales de cada rider, incluyendo layout, tipografia y galerias.
 
-2. **Agregar fotos de los riders:**
-   - Coloca las imágenes en la carpeta `images/`
-   - Actualiza las rutas en `js/riders-data.js` con los nombres reales de las imágenes
-   - Formato recomendado: JPG o PNG, proporción horizontal
+### Scripts (JS)
+Carpeta `js/` con la logica del sitio:
+- **riders-data.js**: Contiene un array de objetos con la informacion base de cada rider (nombre, foto de perfil, descripcion corta) utilizada para generar el acordeon dinamicamente.
+- **team.js**: Script encargado de la generacion dinamica del HTML de los riders en la pagina principal y la funcionalidad del acordeon interactivo.
 
-3. **Editar información de los riders:**
-   - Abre `js/riders-data.js`
-   - Modifica los campos `shortDescription` y `longDescription` de cada rider
-   - Los textos actuales son placeholders (lorem ipsum)
-
-## Características
-
-- ✅ Acordeón interactivo (solo un rider abierto a la vez)
-- ✅ Diseño responsive (se adapta a móviles y tablets)
-- ✅ Transiciones suaves
-- ✅ Fondo negro para la sección expandida
-- ✅ Foto a la izquierda, información a la derecha
-- ✅ Botón "Ver más" en cada rider
-
-## Riders incluidos
-
-- Luisma Iturria
-- Delfi Morosini
-- Nicolás Laprida
-- Roberto Camblor
-- Meghan Mc Cubbin
-- Inés Beisso
-- Lucas Raineri
-- Santiago Medeiro
-- Pedro Cañal
-
-## Personalización
-
-### Abrir un rider por defecto
-
-En `js/team.js`, descomenta las últimas líneas del archivo para que el primer rider esté abierto al cargar la página.
-
-### Cambiar colores
-
-Los colores principales están en `css/team.css`:
-- Fondo del bloque de información: `#000` (negro)
-- Color del texto: `#fff` (blanco)
-- Color de los bordes: `#e0e0e0` (gris claro)
-
+### Imagenes
+Carpeta `images/` organizada en subdirectorios:
+- **Grilla/**: Contiene las imagenes utilizadas en la cuadricula de la pagina de inicio.
+- **Fotos riders/**: Directorio principal de imagenes de los atletas, que a su vez contiene:
+  - **banners/**: Imagenes de portada para las fichas individuales.
+  - Subcarpetas por rider (ej. `fotosDelfi`, `fotosLuisma`): Contienen las fotos especificas para las galerias de cada atleta.
