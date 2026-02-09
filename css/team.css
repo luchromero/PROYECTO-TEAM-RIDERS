@@ -246,12 +246,12 @@ body {
 }
 
 .rider-item.active .rider-content {
-    max-height: 800px;
+    max-height: 1500px;
 }
 
 .rider-content-wrapper {
     display: flex;
-    min-height: 500px;
+    min-height: auto;
 }
 
 .rider-photo-container {
@@ -372,8 +372,12 @@ body {
         min-height: auto;
     }
 
+    .rider-item.active .rider-content {
+        max-height: 2000px;
+    }
+
     .rider-photo-container {
-        flex: 0 0 100%;
+        flex: 0 0 auto;
         width: 100%;
         height: auto;
         aspect-ratio: 1 / 1;
