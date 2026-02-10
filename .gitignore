@@ -14,10 +14,10 @@ desktop.ini
 *.tmp
 *.log
 
-# Node modules (si se agregan después)
+# si se agregan después
 node_modules/
 
-# Archivos de imágenes (opcional - quitar si quieres versionar las imágenes)
+# Archivos de imágenes (opcional quitar si quieres versionar las imágenes)
 # images/*.jpg
 # images/*.png
 # images/*.jpeg
