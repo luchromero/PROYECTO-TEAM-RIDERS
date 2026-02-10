@@ -346,12 +346,12 @@ body {
     }
 
     .team-title {
-        font-size: 5rem;
+        font-size: 1.5rem;
     }
 
     .team-subtitle {
         font-size: 1rem;
-        margin-top: 15px;
+        margin-top: 5px;
     }
 
     .grid-button-container {
@@ -402,7 +402,7 @@ body {
     }
 
     .team-title {
-        font-size: 3rem;
+        font-size: 1.2rem;
     }
 
     .team-subtitle {
