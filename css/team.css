@@ -21,7 +21,7 @@ body {
 /* Contenedor principal de la sección Team */
 .team-section-container {
     width: 100%;
-    height: 110vh;
+    height: 100dvh;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -338,7 +338,7 @@ body {
 /* Responsive */
 @media (max-width: 968px) {
     .team-section-container {
-        height: 110vh;
+        height: 100dvh;
     }
 
     .team-header {
@@ -394,7 +394,7 @@ body {
 
 @media (max-width: 600px) {
     .team-section-container {
-        height: 80vh;
+        height: 100dvh;
     }
 
     .team-header {
